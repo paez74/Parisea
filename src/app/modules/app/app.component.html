@@ -1,0 +1,13 @@
+
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <div class="container">
+      <br>
+      <ul class="nav navbar-nav" routerLinkActive="active">
+          <li class="title"> Parisea</li>
+          <li *ngFor="let g of groups" (click) ="onChange(g.id)" ><a class = "nav-link"> {{g.name}}</a> </li>
+        
+      </ul>
+  </div>
+</nav>
+<br>
+<router-outlet></router-outlet>

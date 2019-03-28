@@ -1,0 +1,16 @@
+<body *ngIf = "home == false">
+<br>
+<div class = "row" >
+  <div class = "column left">
+<ul>
+      <li *ngFor= "let s of subgroups" (click) = "getProductsWName(s.name,2)"class = "active"> <a>{{s.name}}</a> </li>
+</ul>
+</div>
+ <div class="column right" style="background-color:#bbb;">
+      <h2 (click) ="Log()">Grupo de Objetos </h2>
+      <ul> 
+        <li *ngFor= "let p of products" class = "active"  > <a>{{p.name}} </a> </li>
+      </ul> 
+    </div>
+  </div>
+</body>

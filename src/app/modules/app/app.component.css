@@ -1,0 +1,55 @@
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+     list-style-type: none;
+     margin: 0;
+        padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+  }
+  main-item{
+      user-select: none;
+  }
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    display: block;
+    padding: 30px 20px;
+    color: white;
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .default-heading, .menu-container {
+    display:inline-block;
+}
+.title {
+    display: block;
+    padding: 30px 20px;
+    color: white;
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+  }
+  
+  .title:hover {
+    background: rgba(0, 0, 0, 0);
+  }
+  .fill-remaining-space {
+    /*This fills the remaining space, by using flexbox.  
+   Every toolbar row uses a flexbox row layout. */
+   flex: 1 1 auto;
+ }
