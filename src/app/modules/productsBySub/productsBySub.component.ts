@@ -87,6 +87,7 @@ export class ProductsBySubComponent implements OnInit, OnDestroy {
   }
 
   private getProducts(subgroupId:number, name:string = "placeholder"){ // name string es temp para preub
+    this.products = []
     for(var i=0;i<name.length/2;i++){
       this.products.push({
         name:"Productos de " + name + " subgrupo: " + (i+1),
