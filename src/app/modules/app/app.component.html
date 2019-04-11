@@ -1,13 +1,19 @@
 
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-  <div class="container">
+     <div class ="header" > 
+       
+     <div class="top-header"> 
+       <a class="title"> Parisea</a> 
+       <div></div>
+      </div>
+
+     <div class="bottom-header">
       <br>
       <ul class="nav navbar-nav" routerLinkActive="active">
-          <li class="title"> Parisea</li>
-          <li *ngFor="let g of groups" (click) ="onChange(g.id)" ><a class = "nav-link"> {{g.name}}</a> </li>
-        
+          <li *ngFor="let g of groups" (click) ="onChange(g.id)" ><a class = "nav-link"> {{g.name}}</a> </li>   
       </ul>
-  </div>
-</nav>
-<br>
+      </div>
+
+      </div>
+
+
 <router-outlet></router-outlet>
