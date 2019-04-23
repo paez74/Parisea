@@ -6,11 +6,11 @@
 <div class = "row" >
   <div class = "column left">
 <ul>
-      <li *ngFor= "let s of subgroups" (click) = "getProductsWName(s.name,2)"class = "active"> <a class="poppins">{{s.name}}</a> </li>
+      <li *ngFor= "let s of subgroups" (click) = "getProducts(s.groupId, s.name);"class = "active"> <a class="poppins">{{s.name}}</a> </li>
 </ul>
 </div>
  <div class="column right" style="background-color:#bbb;">
-      <h2 (click) ="Log()">Grupo de Objetos </h2>
+      <h2 >Productos </h2>
       <ul> 
         <li *ngFor= "let p of products" class = "active"  > <a>{{p.name}} </a> </li>
       </ul> 

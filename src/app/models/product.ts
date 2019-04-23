@@ -4,7 +4,7 @@ export class Product  {
     name: string;
     productId:string;
     description: string;
-    price: string;
+    price: number;
 }
 
 

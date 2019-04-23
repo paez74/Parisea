@@ -41,39 +41,34 @@ export class AppComponent {
         id:"2",
       } as Group);
       this.groups.push({
-        name:"Comida",
+        name:"Comidas",
         description:"Todo para tu fiesta",
         id:"3",
       } as Group);
       this.groups.push({
-        name:"Comidas",
+        name:"Mobiliario",
         description:"Todo para tu fiesta",
         id:"4",
       } as Group);
       this.groups.push({
-        name:"Mobiliario",
+        name:"Musica",
         description:"Todo para tu fiesta",
         id:"5",
       } as Group);
       this.groups.push({
-        name:"Musica",
+        name:"Personal",
         description:"Todo para tu fiesta",
         id:"6",
       } as Group);
       this.groups.push({
-        name:"Personal",
+        name:"Entretenimiento",
         description:"Todo para tu fiesta",
         id:"7",
       } as Group);
       this.groups.push({
-        name:"Entretenimiento",
-        description:"Todo para tu fiesta",
-        id:"8",
-      } as Group);
-      this.groups.push({
         name:"Infantil",
         description:"Todo para tu fiesta",
-        id:"9",
+        id:"8",
       } as Group); 
     
      // not implemented yet , by cities waiting on  service  
