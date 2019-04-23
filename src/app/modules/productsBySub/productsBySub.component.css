@@ -32,9 +32,10 @@ a {
 
 a:hover {
   background: white;
-  color: #C55;
+  color: linear-gradient(to right, #E140E1 0%, #E14096 27%);;
   padding-left: 4em;
   transition: padding-left 0.6s;
+  opacity: 1;
 }
 
 * {
@@ -47,6 +48,15 @@ a:hover {
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #E140E1;
+  background: white;
+  opacity: 0.5;
+}
+
 
 .left {
   width: 25%;

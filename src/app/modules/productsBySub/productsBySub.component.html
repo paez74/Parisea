@@ -1,9 +1,12 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
 <body *ngIf = "home == false">
 <br>
 <div class = "row" >
   <div class = "column left">
 <ul>
-      <li *ngFor= "let s of subgroups" (click) = "getProductsWName(s.name,2)"class = "active"> <a>{{s.name}}</a> </li>
+      <li *ngFor= "let s of subgroups" (click) = "getProductsWName(s.name,2)"class = "active"> <a class="poppins">{{s.name}}</a> </li>
 </ul>
 </div>
  <div class="column right" style="background-color:#bbb;">
