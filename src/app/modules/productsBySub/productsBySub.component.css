@@ -93,7 +93,56 @@ a {
   -moz-border-radius: 28px 28px 28px 28px;
   -webkit-border-radius: 28px 28px 28px 28px;
 }
+.list{
+  display:flex !important;
+  flex-direction: column-reverse
+}
+.grid .product-name{
+ font-family: 'Gotham', 'Arial', sans-serif;
+ font-weight: bold;
+}
+.grid .product-price{
+  font-family: 'Gotham', 'Arial', sans-serif;
+  color:slategray;
+
+}
+.grid .product-name-hover{
+  display:none;
+  font-family: 'Gotham', 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.grid .product-price-hover{
+  display:none;
+  font-family: 'Gotham', 'Arial', sans-serif;
+  font-weight: bold;
+}
+.grid > :hover .product-price-hover{
+  display:block;
+}
+.grid > :hover .product-name-hover{
+  display:block;
+}
+.grid > :hover .product-price {
+  display:none;
+}
+.grid > :hover .product-name {
+  display:none;
+}
+
+.product-info{
+ display:flex;
+ flex-direction:column;
+}
 /* Just to make the grid visible */
+/* Thiis is the invisible
+.grid .product-adder{
+  display:none;
+}
+
+.grid > :hover .product-adder{
+  display:block;
+} */
 
 
 
