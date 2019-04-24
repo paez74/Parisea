@@ -42,6 +42,7 @@ ul {
     font-size: .9em;
     letter-spacing: 1px;
     text-decoration: none;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     user-select: none;
   }
 
@@ -57,7 +58,7 @@ ul {
   .title-heading{
     padding: 20px 20px;
     color: black;
-    font-size: 3em;
+    font-size: 6em;
     letter-spacing: 1px;
     text-decoration: none;
     user-select: none;
@@ -69,9 +70,13 @@ ul {
   .title-image{
     padding: 30px 20px;
     color:gray;
-    font-size:30px;
+    font-size:3em;
   }
-
+  .title-text{
+    padding: 30px 20px;
+    font-size:3em;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+  }
   .title-image:hover{
     color:#E140E1;
   }
@@ -92,10 +97,15 @@ ul {
     display:flex;
     flex-direction: row;
     padding-bottom: 20px;
+    align-items: baseline;
   }
   .bottom-header{
    display: flex;
 
+  }
+  .list{
+    padding-left:30px;
+     padding-top:90px;
   }
 
   .fill-remaining-space {
