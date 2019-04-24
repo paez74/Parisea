@@ -179,6 +179,7 @@ a {
 
 .add{
   color: linear-gradient(to right, #E140E1 0%, #E14096 100%);
+  font-family: 'Gotham', 'Arial', sans-serif;
   color:    #E140E1;
   user-select: none;
   cursor: pointer;
@@ -193,6 +194,7 @@ a {
 }
 .remove{
 cursor: pointer;
+user-select: none;
 font-size:2em;
 width:25%;
   max-width:14%

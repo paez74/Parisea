@@ -86,7 +86,17 @@ export class ProductsBySubComponent implements OnInit, OnDestroy {
       )
       */
   }
-
+  private addProduct(product:Product,quantity:number = 1){
+    if(product.quantity + quantity  >= 0 )
+    product.quantity = product.quantity + quantity;
+    
+  }
+  private addProductLine(product:Product){
+    
+    if(product.quantity != 0 )
+    console.log(product);
+    else console.log()
+  }
   private getProducts(subgroupId:number, name:string = "placeholder"){ // name string es temp para preub
     this.selectedSubGroupId = subgroupId;
     console.log(this.selectedSubGroupId)
@@ -95,7 +105,8 @@ export class ProductsBySubComponent implements OnInit, OnDestroy {
       this.products.push({
         name:"Productos de " + name + " subgrupo: " + (i+1),
         description:"Papitas muy ricas",
-        productId:"123456",
+        productId:i.toString(),
+        quantity:0,
         price:520
       } as Product);
     }/*
