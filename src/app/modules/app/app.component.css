@@ -49,7 +49,7 @@ ul {
   .searchbar{
     padding: 30px 20px;
     color: black;
-    font-size: .9em;
+    font-size: .9vw;
     letter-spacing: 1px;
     text-decoration: none;
     background:	#D3D3D3;
@@ -58,7 +58,7 @@ ul {
   .title-heading{
     padding: 20px 20px;
     color: black;
-    font-size: 6em;
+    font-size: 6vw;
     letter-spacing: 1px;
     text-decoration: none;
     user-select: none;
@@ -70,11 +70,11 @@ ul {
   .title-image{
     padding: 30px 20px;
     color:gray;
-    font-size:3em;
+    font-size:3vw;
   }
   .title-text{
     padding: 30px 20px;
-    font-size:3em;
+    font-size:3vw;
     font-family: 'Helvetica', 'Arial', sans-serif;
   }
   .title-image:hover{
@@ -98,7 +98,7 @@ ul {
     flex-direction: row;
     padding-bottom: 20px;
     align-items: baseline;
-  }
+  }*/
   .bottom-header{
    display: flex;
 
