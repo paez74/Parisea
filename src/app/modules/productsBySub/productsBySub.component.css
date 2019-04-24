@@ -38,7 +38,7 @@ a {
 }*/
 
 .poppins:hover {
-  color: linear-gradient(to right, #E140E1 0%, #E14096 27%);;
+  color: linear-gradient(to right, #E140E1 0%, #E14096 100%);;
   padding-left: 4%;
   transition: padding-left 0.6s;
   opacity: 1;
@@ -88,7 +88,10 @@ a {
 
 .grid > *:hover{
   background: white;
-  border: 2px solid #E140E1
+  border: 5px solid #E140E1;
+  border-radius: 28px 28px 28px 28px;
+  -moz-border-radius: 28px 28px 28px 28px;
+  -webkit-border-radius: 28px 28px 28px 28px;
 }
 /* Just to make the grid visible */
 
