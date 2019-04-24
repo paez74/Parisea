@@ -21,7 +21,7 @@
 
           <a class ="product-name-hover"> {{p.name}} </a>
           <div class="product-price-hover">  {{ p.price  | currency: "USD":"symbol":"1.2-2"}} </div>
-            <div class="space-hover" style="min-height: 10vw;"> </div>
+            <div class="space-hover" style="min-height: 6.5vw;"> </div>
          <div class="product-adder">
             <mat-icon class="remove" (click)="addProduct(p,-1)" > remove </mat-icon>
           <input #searchInput type="text"  style="width:10%;" [(ngModel)]="p.quantity"class = "product-searchbar mousetrap" placeholder="0" ng-model="searchBox">

@@ -225,13 +225,13 @@ width:25%;
 
 .grid > :hover .product-adder{
   display:block;
-  size: 2vw;
+  size: 1.5vw;
 }
 
 .product-adder{
   display:flex;
   flex-direction:row;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 
