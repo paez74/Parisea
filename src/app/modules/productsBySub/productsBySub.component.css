@@ -14,7 +14,7 @@ ul {
 ul li {
   display: table-row;
   vertical-align: middle;
-  padding: 1em 3em;
+  padding: 1vw 3vw;
 }
 
 /*ul li {
@@ -125,23 +125,26 @@ a {
   display:flex !important;
   flex-direction: column-reverse;
   background-image: url('../../../assets/Tequila-1800.jpg');
-  width:400px;
-  height:400px;
+  background-size: contain;
+  width:21vw;
+  height:21vw;
   background-repeat: no-repeat;
 }
 .grid .product-name{
  font-family: 'Gotham', 'Arial', sans-serif;
  font-weight: bold;
+ font-size: 1.5vw;
 }
 .grid .product-price{
   font-family: 'Gotham', 'Arial', sans-serif;
   color:slategray;
-
+  font-size: 1.5vw;
 }
 .grid .product-name-hover{
   display:none;
   font-family: 'Gotham', 'Arial', sans-serif;
   font-weight: bold;
+  font-size: 1.5vw;
 }
 
 .grid > :hover .list{
@@ -154,6 +157,7 @@ a {
   display:none;
   font-family: 'Gotham', 'Arial', sans-serif;
   font-weight: bold;
+  font-size: 1.5vw;
 }
 .grid > :hover .product-price-hover{
   display:block;
@@ -171,7 +175,7 @@ a {
   background:transparent;
   border:none;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2vw;
   border-bottom: 1px solid #fff;
   outline: none;
   user-select: none;
@@ -183,11 +187,11 @@ a {
   color:    #E140E1;
   user-select: none;
   cursor: pointer;
-  font-size:2em;
+  font-size:1.5vw;
   width:40%
 }
 .add-icon{
-  font-size:2em;
+  font-size:1.5vw;
   width:25%;
   user-select: none;
   cursor: pointer;
@@ -195,7 +199,7 @@ a {
 .remove{
 cursor: pointer;
 user-select: none;
-font-size:2em;
+font-size:1.5vw;
 width:25%;
   max-width:14%
 }
@@ -221,10 +225,13 @@ width:25%;
 
 .grid > :hover .product-adder{
   display:block;
+  size: 2vw;
 }
+
 .product-adder{
   display:flex;
   flex-direction:row;
+  font-size: 1vw;
 }
 
 
