@@ -6,16 +6,16 @@ ul {
         padding: 0;
   overflow: hidden;
   background:none;
-  
+
   }
   main-item{
       user-select: none;
   }
   li {
     float: left;
-    
+
   }
-  
+
   li a {
     display: block;
     padding: 30px 20px;
@@ -27,10 +27,10 @@ ul {
     font-family: 'Helvetica', 'Arial', sans-serif;
     cursor: pointer
   }
-  
+
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    color:pink;
+    color:#E140E1;
   }
 
   .default-heading, .menu-container {
@@ -42,7 +42,6 @@ ul {
     font-size: .9em;
     letter-spacing: 1px;
     text-decoration: none;
-    text-transform: uppercase;
     user-select: none;
   }
 
@@ -52,30 +51,37 @@ ul {
     font-size: .9em;
     letter-spacing: 1px;
     text-decoration: none;
+    background:	#D3D3D3;
   }
 
   .title-heading{
     padding: 20px 20px;
     color: black;
-    font-size: 2em;
+    font-size: 3em;
     letter-spacing: 1px;
     text-decoration: none;
-    text-transform: uppercase;
     user-select: none;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
   }
-  
+
   .title-image{
     padding: 30px 20px;
     color:gray;
+    font-size:30px;
   }
-  
+
   .title-image:hover{
-    color:pink;
+    color:#E140E1;
   }
 
   .title:hover {
     background: rgba(0, 0, 0, 0);
-   
+
+  }
+  .list-item{
+    font-size: 2em !important;
   }
   .header{
     display:flex;
@@ -89,12 +95,11 @@ ul {
   }
   .bottom-header{
    display: flex;
-   
+
   }
 
   .fill-remaining-space {
-    /*This fills the remaining space, by using flexbox.  
+    /*This fills the remaining space, by using flexbox.
    Every toolbar row uses a flexbox row layout. */
    flex: 1 1 auto;
  }
- 

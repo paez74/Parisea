@@ -2,21 +2,19 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 </head>
-  <div class ="header" > 
-       
-     <div class="top-header"> 
-       <a class="title-heading" style="width:20%"> parisea</a> 
-       <input #searchInput type="text" class = "searchbar mousetrap" style="width:40%;" placeholder="Searchbar" ng-model="searchBox">  
-       <div style="width:40%">
-       <a class="title"> ayuda </a> 
-       <mat-icon class="title-image" style=" color:pink !important;">person </mat-icon>
+  <div class ="header" >
+
+     <div class="top-header">
+       <a class="title-heading" style="width:20%"> parisea</a>
+       <input #searchInput type="text" class = "searchbar mousetrap" style="width:40%;" placeholder="Searchbar" ng-model="searchBox">
+       <a class="title"> ayuda </a>
+       <mat-icon class="title-image" style=" color:#E140E1 !important;">person </mat-icon>
        <mat-icon class="title-image" style=" width:20%; ">shopping_basket </mat-icon>
       </div>
-      </div>
-
-     <div class="bottom-header" style="padding-left:10px;">
+      <br>
+     <div class="bottom-header" style="padding-left:10px; padding-top: 50px">
       <ul style="padding-left:30px"  routerLinkActive="active">
-          <li *ngFor="let g of groups" (click) ="onChange(g.id)" ><a class = "nav-link"> {{g.name}}</a> </li>   
+          <li *ngFor="let g of groups" (click) ="onChange(g.id)" ><a class = "list-item"> {{g.name}}</a> </li>
       </ul>
 
       </div>

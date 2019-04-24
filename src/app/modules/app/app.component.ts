@@ -23,7 +23,7 @@ export class AppComponent {
   this.getGroupIds();
 
   }
-  
+
   public onChange(id){
     console.log(id);
     this.router.navigate(['/group', id]);
@@ -31,47 +31,47 @@ export class AppComponent {
   public getGroupIds(){
     this.groups = [];
       this.groups.push({
-        name:"Paquetes",
+        name:"paquetes",
         description:"Todo para tu fiesta",
         id:"1",
       } as Group);
       this.groups.push({
-        name:"Bebidas",
+        name:"bebidas",
         description:"Todo para tu fiesta",
         id:"2",
       } as Group);
       this.groups.push({
-        name:"Comidas",
+        name:"comidas",
         description:"Todo para tu fiesta",
         id:"3",
       } as Group);
       this.groups.push({
-        name:"Mobiliario",
+        name:"mobiliario",
         description:"Todo para tu fiesta",
         id:"4",
       } as Group);
       this.groups.push({
-        name:"Musica",
+        name:"musica",
         description:"Todo para tu fiesta",
         id:"5",
       } as Group);
       this.groups.push({
-        name:"Personal",
+        name:"personal",
         description:"Todo para tu fiesta",
         id:"6",
       } as Group);
       this.groups.push({
-        name:"Entretenimiento",
+        name:"entretenimiento",
         description:"Todo para tu fiesta",
         id:"7",
       } as Group);
       this.groups.push({
-        name:"Infantil",
+        name:"infantil",
         description:"Todo para tu fiesta",
         id:"8",
-      } as Group); 
-    
-     // not implemented yet , by cities waiting on  service  
+      } as Group);
+
+     // not implemented yet , by cities waiting on  service
     /*this.gService.getGroups().subscribe( result => {
       this.groups = (result.body);
       console.log(result.body);
@@ -81,5 +81,5 @@ export class AppComponent {
   }
     ) */
     }
-  
+
 }
