@@ -113,7 +113,11 @@ a {
 }
 .grid .list{
   display:flex !important;
-  flex-direction: column-reverse
+  flex-direction: column-reverse;
+  background-image: url('../../../assets/Tequila-1800.jpg');
+  width:400px;
+  height:400px;
+  background-repeat: no-repeat;
 }
 .grid .product-name{
  font-family: 'Gotham', 'Arial', sans-serif;
