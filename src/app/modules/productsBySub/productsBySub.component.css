@@ -43,6 +43,14 @@ a {
   transition: padding-left 0.6s;
   opacity: 1;
   font-weight:500;
+  cursor: pointer;
+  user-select: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
 }
 
 .selected{
@@ -83,6 +91,8 @@ a {
   margin: 0em;
   border: 0em;
   text-align: left;
+  user-select: none;
+  user-select: none;
 }
 
 .grid {
@@ -164,12 +174,28 @@ a {
   font-size: 2em;
   border-bottom: 1px solid #fff;
   outline: none;
+  user-select: none;
 }
 
 .add{
   color: linear-gradient(to right, #E140E1 0%, #E14096 100%);
-  font-size:2em;
   color:    #E140E1;
+  user-select: none;
+  cursor: pointer;
+  font-size:2em;
+  width:40%
+}
+.add-icon{
+  font-size:2em;
+  width:25%;
+  user-select: none;
+  cursor: pointer;
+}
+.remove{
+cursor: pointer;
+font-size:2em;
+width:25%;
+  max-width:14%
 }
 
 .product-info{

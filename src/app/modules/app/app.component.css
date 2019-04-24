@@ -91,6 +91,8 @@ ul {
   }
   .list-item{
     font-size: 2em !important;
+    user-select: none;
+    user-select: none;
   }
   .header{
     display:flex;
