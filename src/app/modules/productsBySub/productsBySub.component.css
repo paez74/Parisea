@@ -38,10 +38,11 @@ a {
 }*/
 
 .poppins:hover {
-  color: linear-gradient(to right, #E140E1 0%, #E14096 100%);;
+  color: linear-gradient(to right, #E140E1 0%, #E14096 100%);
   padding-left: 4%;
   transition: padding-left 0.6s;
   opacity: 1;
+  font-weight:500;
 }
 
 * {
@@ -93,7 +94,7 @@ a {
   -moz-border-radius: 28px 28px 28px 28px;
   -webkit-border-radius: 28px 28px 28px 28px;
 }
-.list{
+.grid .list{
   display:flex !important;
   flex-direction: column-reverse
 }
@@ -110,6 +111,12 @@ a {
   display:none;
   font-family: 'Gotham', 'Arial', sans-serif;
   font-weight: bold;
+}
+
+.grid > :hover .list{
+  display:flex !important;
+  flex-direction: column;
+  opacity: 0.5;
 }
 
 .grid .product-price-hover{
@@ -129,20 +136,47 @@ a {
 .grid > :hover .product-name {
   display:none;
 }
+.product-searchbar{
+  background:transparent;
+  border:none;
+  font-weight: bold;
+  font-size: 2em;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+.add{
+  color: linear-gradient(to right, #E140E1 0%, #E14096 100%);
+  font-size:2em;
+  color:    #E140E1;
+}
 
 .product-info{
  display:flex;
  flex-direction:column;
 }
+.grid .space-hover{
+  display:none;
+}
+.grid > :hover .space-hover{
+  display:block;
+}
+::placeholder{
+  color:black;
+}
 /* Just to make the grid visible */
-/* Thiis is the invisible
+
 .grid .product-adder{
   display:none;
 }
 
 .grid > :hover .product-adder{
   display:block;
-} */
+}
+.product-adder{
+  display:flex;
+  flex-direction:row;
+}
 
 
 

@@ -19,11 +19,12 @@
 
           <a class ="product-name-hover"> {{p.name}} </a>
           <div class="product-price-hover">  {{ p.price  | currency: "USD":"symbol":"1.2-2"}} </div>
-
+            <div class="space-hover" style="min-height: 250px;"> </div>
          <div class="product-adder">
-            <mat-icon> remove </mat-icon>
-          <input #searchInput type="text" class = "searchbar mousetrap" placeholder="Searchbar" ng-model="searchBox">
-          <mat-icon> add </mat-icon>
+            <mat-icon style="font-size:2em; width:25%;  max-width:14% "> remove </mat-icon>
+          <input #searchInput type="text"  style="width:10%;" class = "product-searchbar mousetrap" placeholder="0" ng-model="searchBox">
+          <mat-icon style="font-size:2em; width:25%" > add </mat-icon>
+          <a class="add" style="font-size:2em; width:40%"> agregar </a>
         </div>
       </div>
          </li>
