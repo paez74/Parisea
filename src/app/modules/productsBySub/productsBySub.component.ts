@@ -18,8 +18,9 @@ export class ProductsBySubComponent implements OnInit, OnDestroy {
   public products:Product[] = [];
   public subgroups:SubGroup[] = [];
   public selectedSubGroup:SubGroup[];
+  public selectedSubGroupId:number;
   public group:any;
-  /* 
+  /*
     Bebidas:1
     Paquetes:2
     Comida:3
@@ -40,24 +41,24 @@ export class ProductsBySubComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    
-    this.sub  = this.route.params.subscribe(params =>  { 
+
+    this.sub  = this.route.params.subscribe(params =>  {
                     this.subgroups = [];
-                    this.groupId = params['id']  
+                    this.groupId = params['id']
                     console.log(this.groupId)
                     this.getSubGroupsByGroupOffline(this.groupId)
-                    // aqui va la funcion de get subgroups  
-          }         // con esta info harias el service de get subgroups, y activas el primero 
-                     
+                    // aqui va la funcion de get subgroups
+          }         // con esta info harias el service de get subgroups, y activas el primero
+
                      )
     console.log(this.groupId);
-    
+
    /* this.getSubGroups(); */
-    //this.getProducts(0,"prueba"); // esto no sera necesario cuando se implement el getSubGroups service 
+    //this.getProducts(0,"prueba"); // esto no sera necesario cuando se implement el getSubGroups service
 
   }
-  
-  private getSubGroups(groupId:number){ 
+
+  private getSubGroups(groupId:number){
     console.log("groupId es " + groupId);
     this.getSubGroupsByGroupOffline(groupId);
     this.getProducts(0,"pruebita");
@@ -72,7 +73,7 @@ export class ProductsBySubComponent implements OnInit, OnDestroy {
       this.getProducts(0,"pruebita");
     }  */
     // esperando a service
-    /*this.subGroupService.getSubGroupsByGroup(this.group.id,0).subscribe( // ciudad es 0 porque no esta implementado 
+    /*this.subGroupService.getSubGroupsByGroup(this.group.id,0).subscribe( // ciudad es 0 porque no esta implementado
       result => {
           this.subgroups = (result.body);
           this.getProducts(this.subgroups[0].id);
@@ -87,6 +88,8 @@ export class ProductsBySubComponent implements OnInit, OnDestroy {
   }
 
   private getProducts(subgroupId:number, name:string = "placeholder"){ // name string es temp para preub
+    this.selectedSubGroupId = subgroupId;
+    console.log(this.selectedSubGroupId)
     this.products = []
     for(var i=0;i<name.length/2;i++){
       this.products.push({
@@ -101,10 +104,10 @@ export class ProductsBySubComponent implements OnInit, OnDestroy {
          this.products = (result.body);
          console.log(this.products);
 
-       }, 
+       },
        error => {
          this.errorHandler.handleNetRequestError(error);
-       } 
+       }
     ); */
    console.log(this.products)
   }
@@ -113,7 +116,7 @@ export class ProductsBySubComponent implements OnInit, OnDestroy {
     this.sub.unsubscribe();
   }
 
-  private getProductsWName(name:string,size:number){ // just for testing 
+  private getProductsWName(name:string,size:number){ // just for testing
     this.products = [];
     for(var i=0;i<size;i++){
       this.products.push({
@@ -127,7 +130,7 @@ export class ProductsBySubComponent implements OnInit, OnDestroy {
 
 
 
-  /// ONLY FOR TESTING 
+  /// ONLY FOR TESTING
   public getSubGroupsByGroupOffline(groupId:number){
    console.log(groupId);
    var name = "default";
@@ -187,7 +190,7 @@ Infantil:9 */
           console.log(this.subgroups+ "algo") ;
             break;
 
-        case '3': 
+        case '3':
         name = "Comidas";
         this.subgroups.push({
           name:"Botanas",
@@ -215,7 +218,7 @@ Infantil:9 */
           groupId:"3",
           id:"34"
         } as SubGroup);
-            break; 
+            break;
         case '4':
         name = "Mobiliario";
         this.subgroups.push({
@@ -244,8 +247,8 @@ Infantil:9 */
           groupId:"4",
           id:"44"
         } as SubGroup);
-            break; 
-        case '5': 
+            break;
+        case '5':
         name="Musica";
         this.subgroups.push({
           name:"Acustico",
@@ -267,7 +270,7 @@ Infantil:9 */
           groupId:"5",
           id:"53"
         } as SubGroup);
-            break; 
+            break;
         case '6':
         name = "Personal";
         this.subgroups.push({
@@ -290,7 +293,7 @@ Infantil:9 */
           groupId:"6",
           id:"63"
         } as SubGroup);
-            break; 
+            break;
         case '7':
         name="Entretenmiento";
         this.subgroups.push({
@@ -319,7 +322,7 @@ Infantil:9 */
           groupId:"7",
           id:"74"
         } as SubGroup);
-            break; 
+            break;
         case '8':
         name ="Infantil";
         this.subgroups.push({
@@ -342,7 +345,7 @@ Infantil:9 */
         } as SubGroup);
         break;
         default:
-        
+
         console.log("Entro en el default")
             break;
     }

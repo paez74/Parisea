@@ -5,11 +5,13 @@
 <div class = "row" >
   <div class = "column left">
 <ul>
-      <li *ngFor= "let s of subgroups" (click) = "getProducts(s.groupId, s.name);"class = "active poppins"> {{s.name}} </li>
+      <li *ngFor= "let s of subgroups" (click) = "getProducts(s.id, s.name);"  [ngClass]="{
+        'selected ':selectedSubGroupId == s.id,
+        'active poppins': selectedSubGroupId != s.id
+      }"> {{s.name}} </li>
 </ul>
 </div>
  <div class="column right" >
-      <h2 >Productos </h2>
       <ul class="grid">
         <li *ngFor= "let p of products" class = "active list"  >
           <div class="product-info">
