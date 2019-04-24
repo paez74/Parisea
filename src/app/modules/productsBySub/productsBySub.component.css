@@ -13,12 +13,18 @@ ul {
 
 ul li {
   display: table-row;
+  vertical-align: middle;
 }
 
-ul li a {
+/*ul li {
   display: table-cell;
   vertical-align: middle;
   padding: 1em 3em;
+}*/
+
+a {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* this is just for styling the demo */
@@ -32,7 +38,7 @@ ul li a {
 
 a:hover {
   color: linear-gradient(to right, #E140E1 0%, #E14096 27%);;
-  padding-left: 4em;
+  padding-left: 4%;
   transition: padding-left 0.6s;
   opacity: 1;
 }
@@ -50,11 +56,13 @@ a:hover {
 
 .poppins {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 5vw;
   color: #E140E1;
   background: white;
   opacity: 0.5;
-  padding: 0%;
+  padding: 0px 0px 0px 0px;
+  margin: 0em;
+  border: 0em;
   width: 25%;
   text-align: left;
 }
