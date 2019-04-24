@@ -13,7 +13,10 @@
       </div>
      <div class="bottom-header" >
       <ul class="list"  routerLinkActive="active">
-          <li *ngFor="let g of groups" (click) ="onChange(g.id)" ><a class = "list-item"> {{g.name}}</a> </li>
+          <li *ngFor="let g of groups" (click) ="onChange(g.id)" ><a [ngClass]="{
+            'title-image-selected':selectedGroupId == g.id,
+            'list-item': selectedGroupId != g.id
+          }"class = "list-item"> {{g.name}}</a> </li>
       </ul>
 
       </div>

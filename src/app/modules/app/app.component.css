@@ -80,6 +80,10 @@ ul {
   .title-image:hover{
     color:#E140E1;
   }
+  .title-image-selected{
+    font-size: 2em !important;
+    color:#E140E1 !important;
+  }
 
   .title:hover {
     background: rgba(0, 0, 0, 0);

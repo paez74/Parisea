@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'parisea-project';
   public groups:any[] = [];
-
+  public selectedGroupId:number;
   constructor(
     private gService: GroupService,
     private errorHandler: MessageServiceUtil,
@@ -26,6 +26,7 @@ export class AppComponent {
 
   public onChange(id){
     console.log(id);
+    this.selectedGroupId = id;
     this.router.navigate(['/group', id]);
   }
   public getGroupIds(){
