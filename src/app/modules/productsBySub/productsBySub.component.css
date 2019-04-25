@@ -130,6 +130,7 @@ a {
   height:21vw;
   background-repeat: no-repeat;
 }
+
 .grid .product-name{
  font-family: 'Gotham', 'Arial', sans-serif;
  font-weight: bold;
@@ -150,8 +151,8 @@ a {
 .grid > :hover .list{
   display:flex !important;
   flex-direction: column;
-  opacity: 0.5;
 }
+
 
 .grid .product-price-hover{
   display:none;
@@ -226,6 +227,7 @@ width:25%;
 .grid > :hover .product-adder{
   display:block;
   size: 1.5vw;
+  background-image: rgba(0, 0, 0, 0.5);
 }
 
 .product-adder{
