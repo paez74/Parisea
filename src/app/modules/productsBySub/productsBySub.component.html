@@ -13,22 +13,22 @@
 </div>
  <div class="column right" >
       <ul class="grid">
-        <li *ngFor= "let p of products" class = "active list"  >
+        <li *ngFor= "let p of products" class = "active list list-image"  >
           <div class="product-info">
 
-          <div class="product-price">  {{ p.price  | currency: "USD":"symbol":"1.2-2"}} </div>
-          <a class="box product-name"> {{p.name}} </a>
+            <div class="product-price">  {{ p.price  | currency: "USD":"symbol":"1.2-2"}} </div>
+            <a class="box product-name"> {{p.name}} </a>
 
-          <a class ="product-name-hover"> {{p.name}} </a>
-          <div class="product-price-hover">  {{ p.price  | currency: "USD":"symbol":"1.2-2"}} </div>
+            <a class ="product-name-hover"> {{p.name}} </a>
+            <div class="product-price-hover">  {{ p.price  | currency: "USD":"symbol":"1.2-2"}} </div>
             <div class="space-hover" style="min-height: 6.5vw;"> </div>
-         <div class="product-adder">
-            <mat-icon class="remove" (click)="addProduct(p,-1)" > remove </mat-icon>
-          <input #searchInput type="text"  style="width:10%;" [(ngModel)]="p.quantity"class = "product-searchbar mousetrap" placeholder="0" ng-model="searchBox">
-          <mat-icon class="add-icon" (click)="addProduct(p)" > add </mat-icon>
-          <a class="add" (click) ="addProductLine(p)">  agregar </a>
-        </div>
-      </div>
+            <div class="product-adder">
+              <mat-icon class="remove" (click)="addProduct(p,-1)" > remove </mat-icon>
+              <input #searchInput type="text"  style="width:10%;" [(ngModel)]="p.quantity"class = "product-searchbar mousetrap" placeholder="0" ng-model="searchBox">
+              <mat-icon class="add-icon" (click)="addProduct(p)" > add </mat-icon>
+              <a class="add" (click) ="addProductLine(p)">  agregar </a>
+            </div>
+          </div>
          </li>
       </ul>
     </div>

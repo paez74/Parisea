@@ -124,11 +124,18 @@ a {
 .grid .list{
   display:flex !important;
   flex-direction: column-reverse;
-  background-image: url('../../../assets/Tequila-1800.jpg');
-  background-size: contain;
   width:21vw;
   height:21vw;
-  background-repeat: no-repeat;
+}
+
+.grid .list-image {
+  background: url('../../../assets/Tequila-1800.jpg') no-repeat;
+  background-size: contain;
+}
+
+.grid > :hover.list-image{
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../../../assets/Tequila-1800.jpg') no-repeat;
+  background-size: contain;
 }
 
 .grid .product-name{
